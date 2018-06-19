@@ -1,0 +1,493 @@
+#body {
+	margin: 0;
+}
+
+
+/* TOGGLE NAV MENU */
+
+#menu-icon {
+	position: absolute;
+    display: inline-block;
+}
+
+#nav-toggle {
+	background-color: black;
+	border: none;
+	cursor: pointer;	
+}
+
+.menu-icon {
+	height: 30px;
+	padding: 20px;
+}
+
+.dropdown-content {
+	display: none;
+    position: relative;
+    margin: -80px 0px;
+    padding: 40px 0px;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+a.dropdown-content:hover {
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .2);
+}
+
+a.dropdown-content:hover {
+	border: none;
+	background-color: rgb(0, 0, 0);
+}
+
+.show {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* FULLSCREEN NAVBAR */
+
+.navbar {
+	display: none;
+}
+
+.nav-logo {
+	height: 50px;
+	padding: 30px 0px 20px;
+}
+
+.navLink {
+	color: white;
+	font-family: roboto;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 15px 0px;
+	width: 100%;
+    text-align: center;
+}
+
+a.navLink:hover {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+a.logo:hover {
+	border: none;
+	background-color: rgb(0, 0, 0);
+}
+
+/* FOOTERS */
+
+#footer{
+	background-image: url("/img/plant1.jpeg");
+	background-size: cover;
+	height: 150px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#footer-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 100%;
+	padding: 20px 20px 0px;
+}
+
+#footer-column {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-end;
+	font-family: roboto;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.footer-mission {
+	font-family: roboto;
+	font-weight: 500;
+	font-size: 12px;
+	flex: 1;
+    justify-content: center;
+    display: inline-flex;
+    flex-flow: column wrap;
+}
+
+.footer-social {
+	flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#footer-img {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+
+}
+
+.footer-img {
+	height: 60px;
+}
+
+.social-links {
+	font-family: roboto;
+	font-weight: 300;
+	font-size: 12px;
+	text-decoration: none;
+	color: black;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.social-icons {
+	height: 25px;
+	padding: 3px 5px 3px 0px;
+}
+
+a.social-links:hover {
+	font-weight: 500;
+}
+
+.footer.links {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	flex: 1;
+	font-family: roboto;
+	font-weight: 300;
+	font-size: 12px;
+	align-items: flex-end;
+}
+
+#footer-links {
+	text-decoration: none;
+	color: black;
+    padding: 5px;
+}
+
+.copyright {
+	font-size: 10px;
+	font-family: roboto;
+	font-weight: 300;
+	display: flex;
+	flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 20px 10px;
+
+}
+
+/* INTRODUCTION */
+
+.container.introduction {
+	background-image: url("/img/recoveryroots.jpg");
+	background-size: cover;
+	height: 550px;
+	width: 100%;
+}
+
+.introduction {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+    justify-content: center;
+    width: 1000px;
+}
+
+.introduction-title {
+	font-family: roboto;
+	font-weight: 100;
+	text-align: center;
+	font-size: 39px;
+	padding: 0px 60px;
+}
+
+.introduction-description {
+	font-family: roboto;
+	font-weight: 700;
+	font-size: 16px;
+	font-style: italic;
+	text-align: justify;
+	padding: 40px 60px 60px;
+
+}
+
+.intro-logo {
+	height: 100px;
+}
+
+/* 4 CORE ELEMENTS */
+
+.container.elements {
+	align-items: flex-start;
+	padding-bottom: 100px;
+}
+
+.element-container {
+	display: inline-flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 100px 0px 0px;
+}
+
+.element-img {
+	height: 75px;
+}
+
+.element-title {
+	font-family: roboto;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 30px 0px 15px;
+}
+
+.element-description {
+	font-family: roboto;
+	font-weight: 300;
+	font-size: 18px;
+	text-align: justify;
+	width: 260px;
+	padding: 0px 20px;
+}
+
+
+/* FREE DOWNLOAD */
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* eBook img */
+
+#ebook {
+	flex: 25%;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.ebookimg {
+	height: 200px;
+	width: auto;
+	padding: 100px 50px 50px;
+}
+
+/* eBook text */
+
+#ebooktext {
+	padding: 0px 20px 100px;
+	display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    flex: 50%;
+}
+
+.ebooktext {
+	font-size: 30px;
+	font-family: Roboto;
+	font-weight: 300;
+	padding-bottom: 20px;
+    text-align: center;
+}
+
+.booktitle {
+	font-weight: 900;
+}
+
+.ebookform {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+
+.input {
+	margin: 10px;
+	padding: 5px;
+	width: 200px;
+}
+
+.submit {
+	margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+	font-family: Roboto;
+	font-weight: 700;
+	background-color: olive;
+}
+
+.random {
+	flex: 50%;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("/img/palmleaves.jpeg");
+}
+
+
+/* HEADERS */
+
+.header {
+	width: 100%;
+	height: 500px;
+    margin: 0px;
+}
+
+.header.main {
+	background: url("/img/girl.jpeg") no-repeat;
+	background-size: cover;
+	background-position-x: -180px;
+	background-attachment: fixed;
+}
+
+.header.about {
+	background: url("/img/purple.jpeg") no-repeat;
+	background-size: cover;
+    background-position-x: 0px;
+	background-attachment: fixed;
+}
+
+.header.community {
+	background: url("/img/community1.jpg") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position-y: -200px;
+}
+
+.header.contact {
+	background: url("/img/edroots.jpg") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position-y: -50px;
+}
+
+
+/* FOOTERS */
+
+#footer-container {
+	height: 300px;
+}
+
+
+/* ABOUT PAGE */
+
+#container1 {
+	width: 100%;
+	height: 875px;
+	margin: 0px 0px 60px;
+
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#logo {
+	display: none;
+}
+
+.company {
+	flex: 60%;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+
+.name {
+	font-size: 30px;
+	font-family: Roboto;
+	font-weight: 700;
+	text-align: left;
+	padding: 60px 60px 20px;
+}
+
+.text {
+	font-size: 18px;
+	font-family: roboto;
+	font-weight: 300;
+	padding: 0px 60px;
+}
+
+/* Stacy */
+
+.container2 {
+	background-color: olive;
+	width: 100%;
+	height: 650px;
+	margin: 0px;
+
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+#column {
+	display: inline-flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: left;
+
+}
+
+.bio-slug {
+	font-family: roboto;
+	font-weight: 500;
+	font-size: 16px;
+	font-style: italic;
+	padding-top: 10px
+}
+
+.profile {
+	width: 70%;
+	padding: 0px 60px;
+}
+
+.explaination {
+	font-size: 18px;
+	font-family: roboto;
+	font-weight: 300;
+	padding: 20px 0px;
+}
+
+#container3 {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.story {
+	font-size: 18px;
+	font-family: roboto;
+	font-weight: 300;
+	padding: 90px 60px 60px;
+}
+
+
+/* Violet */
+
+.container2.violet {
+	background-color: lightsteelblue;
+}
+
+
+
+
+
+
+
+
+
+
