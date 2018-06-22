@@ -482,9 +482,81 @@ a.social-links:hover {
 	background-color: lightsteelblue;
 }
 
+/* COMMUNITY */
+
+#coming-soon {
+	height: 200px;
+	font-family: roboto;
+	font-weight: 300;
+	font-size: 18px;
+	padding: 40px 0px 40px 40px;
+	width: 100%;
+}
 
 
+/* CONTACT */
 
+#contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.contact-card {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0px 40px;
+    flex: 1;
+    align-items: center;
+}
+
+.contact-title {
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.contact-icon {
+	height: 20px;
+	padding-right: 10px;
+}
+
+.contact-description {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	font-family: roboto;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.contact-description-details {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 10px 0px;
+}
+
+.contact-img {
+	width: 200px;
+	height: auto;
+	border-radius: 100px;
+}
+
+a {
+	text-decoration: none;
+}
+
+form .thanks {
+	display: none;
+}
+
+form .thanks.submitted {
+	display: block;
+	padding-top: 15px;
+	color: olive;
+}
 
 
 

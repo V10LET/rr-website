@@ -565,6 +565,8 @@ form .thanks {
 
 form .thanks.submitted {
 	display: block;
+	padding-top: 15px;
+	color: olive;
 }
 
 
