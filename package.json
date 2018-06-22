@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run sass && rimraf dist/ && babel ./server --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "npm run build && node dist/server/index.js",
+    "start": "npm run build && node dist/index.js",
     "sass": "node-sass server/public/scss -o server/public/styles",
     "sass-w": "node-sass --watch server/public/scss -o server/public/styles"
   },
