@@ -1,5 +1,5 @@
 import 'dotenv/config'
 import app from './app'
 
-app.listen(1337, () => console.log('Running on localhost:1337'))
+app.listen(process.env.PORT, () => console.log('Running on localhost:' + process.env.PORT))
 

@@ -30,11 +30,11 @@ viewController.mailingList = function (req, res) {
             LNAME: lastName,
         },
     }).then(function(results) {
-        console.log('results ~>', results)
         res.status(200).json({})
 
     }).catch(function (err) {
         console.error('ERROR ~>', err)
+        res.status(err.status).json({ error: err.detail })
     })
 }
 

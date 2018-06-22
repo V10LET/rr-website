@@ -28,11 +28,15 @@ window.onclick = function(event) {
 var form = document.querySelector('form')
 var inputName = form.querySelector('.input-name')
 var inputEmail = form.querySelector('.input-email')
-var thanks = document.querySelector('.thanks')
+var thanks = form.querySelector('.thanks')
+var error = form.querySelector('.error')
 
 form.addEventListener('submit', function(event) {
     event.preventDefault()
     event.stopPropagation()
+
+    thanks.classList.remove('show')
+    error.classList.remove('show')
 
     var name = inputName.value
     var email = inputEmail.value
@@ -42,7 +46,9 @@ form.addEventListener('submit', function(event) {
         name: name,
         email: email,
     }).then(function () {
-        console.log('hihihi')
-        thanks.classList.add('submitted')
+        thanks.classList.add('show')
+    }).catch(function (err) {
+        error.innerHTML = err.response.data.error
+        error.classList.add('show')
     })
 })

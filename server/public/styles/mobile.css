@@ -550,12 +550,22 @@ a {
 
 form .thanks {
 	display: none;
+	color: olive;
 }
 
-form .thanks.submitted {
+form .thanks.show {
 	display: block;
 	padding-top: 15px;
-	color: olive;
+}
+
+form .error {
+	display: none;
+	color: red;
+}
+
+form .error.show {
+	display: block;
+	padding-top: 15px;
 }
 
 
