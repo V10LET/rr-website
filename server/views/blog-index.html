@@ -2,21 +2,65 @@
 <html>
 <head>
 	<title></title>
+
+	<style>
+
+	.category {
+		display: none;
+	}
+
+	.category.show {
+		display: block;
+	}
+
+	</style>
 </head>
 <body>
 
 <div class="posts">
-	{{ #posts }}
-		<div class="post">
-			<a href="/blog/{{ url }}">
-				<div class="image"><img src="/img/{{ image }}" /></div>
-				<div class="title">{{ title }}</div>
-				<div class="date">{{ date }}</div>
-				<div class="body">{{{ body }}}</div>
-			</a>
-		</div>
-	{{ /posts }}
+	<select id="category-dropdown">
+		{{ #categories }}
+			<option value="{{ categoryClass }}">{{ category }}</option>
+		{{ /categories }}
+	</select>
+
+	<h1>By category</h1>
+	{{ #categories }}
+		<div class="category category-{{ categoryClass }}">
+			<h2 class="category-name">{{ category }}</h2>
+
+			<div class="posts">
+				{{ #posts }}
+		 			<a href="/blog/{{ url }}">
+						<div class="image"><img width=50 src="/img/{{ image }}" /></div>
+						<div class="title">{{ title }}</div>
+						<div class="date">{{ date }}</div>
+						<div class="body">{{{ body }}}</div>
+					</a>
+				{{ /posts }}
+ 			</div>
+ 		</div>
+		<br><br><br>
+	{{ /categories }}
 </div>
+
+<script>
+
+	var categoryDropdown = document.querySelector('#category-dropdown')
+	var currentCategory = '{{ defaultCategory }}'
+
+	// show the defaultCategory when we first load the page
+	document.querySelector('.category-' + currentCategory).classList.add('show')
+
+	categoryDropdown.addEventListener('change', function(event) {
+		var previousCategory = currentCategory
+		currentCategory = categoryDropdown.value
+
+		document.querySelector('.category-' + previousCategory.replace(/ /g, '-')).classList.remove('show')
+		document.querySelector('.category-' + currentCategory.replace(/ /g, '-')).classList.add('show')
+	})
+
+</script>
 
 </body>
 </html>

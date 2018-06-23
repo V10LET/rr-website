@@ -22,10 +22,31 @@ viewController.contact = function (req, res) {
 }
 
 viewController.blogIndex = function (req, res) {
-    let allPosts = db.getAllPosts()
+    let categories = db.getPostCategories()
+
+    let postsByCategory = categories.map(function(category) {
+        return {
+            category: category,
+            categoryClass: category.replace(/ /g, '-'),
+            posts: db.getPostsByCategory(category),
+        }
+    })
+
+    // Add a fake "all" category to the top of the list of categories
+    postsByCategory.unshift({
+        category: 'all',
+        categoryClass: 'all',
+        posts: db.getAllPosts(),
+    })
+
+    // reverse all of the lists of posts
+    for (let category of postsByCategory) {
+        category.posts.reverse()
+    }
 
     return res.render('blog-index.html', {
-        posts: allPosts,
+        categories: postsByCategory,
+        defaultCategory: 'all',
     })
 }
 
