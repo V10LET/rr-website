@@ -1,0 +1,16 @@
+[
+	{
+		"title": "My first post",
+		"url": "my-first-post",
+		"date": "June 3, 2018",
+		"image": "brain.png",
+		"body": "This is muh bloggy ya ya ya"
+	},
+	{
+		"title": "My second post",
+		"url": "second-post",
+		"date": "June 12, 2018",
+		"image": "heart.png",
+		"body": "This is muh other bloggy doooo itttttt"
+	}
+]

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div class="posts">
+	{{ #posts }}
+		<div class="post">
+			<a href="/blog/{{ url }}">
+				<div class="image"><img src="/img/{{ image }}" /></div>
+				<div class="title">{{ title }}</div>
+				<div class="date">{{ date }}</div>
+				<div class="body">{{{ body }}}</div>
+			</a>
+		</div>
+	{{ /posts }}
+</div>
+
+</body>
+</html>

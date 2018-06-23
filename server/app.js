@@ -3,9 +3,14 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import engines from 'consolidate'
 import favicon from 'serve-favicon'
+import db from './db/index.js'
 
-import routes from './routes'
+import routes from './routes.js'
 
+// Initialize the database
+db.init()
+
+// Initialize the server
 const app = express()
 
 // Middleware
@@ -18,5 +23,11 @@ app.engine('html', engines.mustache)
 app.set('view engine', 'html')
 
 app.use('/', routes)
+
+// Handle "404 not found" errors
+app.use(function(req, res, next) {
+    res.status(404)
+    res.render('404.html')
+})
 
 export default app

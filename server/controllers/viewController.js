@@ -1,14 +1,49 @@
-const Mailchimp = require('mailchimp-api-v3')
-const mailchimp = new Mailchimp(process.env.MAILCHIMP_API_KEY)
+import db from '../db/index.js'
 
-const viewController = {}
+let Mailchimp = require('mailchimp-api-v3')
+let mailchimp = new Mailchimp(process.env.MAILCHIMP_API_KEY)
+
+let viewController = {}
 
 viewController.index = function (req, res) {
     return res.render('index.html')
 }
 
+viewController.about = function (req, res) {
+    return res.render('about.html')
+}
+
+viewController.community = function (req, res) {
+    return res.render('community.html')
+}
+
+viewController.contact = function (req, res) {
+    return res.render('contact.html')
+}
+
+viewController.blogIndex = function (req, res) {
+    let allPosts = db.getAllPosts()
+
+    return res.render('blog-index.html', {
+        posts: allPosts,
+    })
+}
+
+viewController.blogPost = function (req, res) {
+    let url = req.params.url
+    let post = db.getPostByURL(url)
+
+    if (!post) {
+        return res.status(404).render('404.html')
+    }
+    
+    return res.render('blog-post.html', {
+        post: post,
+    })
+}
+
 viewController.mailingList = function (req, res) {
-    const { email, name } = req.body
+    let { email, name } = req.body
     if (!email) {
         return res.status(400).json({ error: 'Missing email' })
     } else if (!name) {
