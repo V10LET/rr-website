@@ -21,8 +21,8 @@ Your emotional body is a sacred portal through which your greatest healing occur
 
 We believe a trusting, connected, aligned and receptive relationship to your spiritual body brings clarity in uncertainty, light in dark, and love in loss. It is connecting with who you are underneath all the conditioning and pain to find your true self.
 
-Facebook: facebook.com/EDRecoveryRoots/
+Facebook: www.facebook.com/EDRecoveryRoots/
 
-Instagram: instagram.com/edrecoveryroots/
+Instagram: www.instagram.com/edrecoveryroots/
 
 Email: edrecoveryroots@gmail.com
