@@ -1,8 +1,8 @@
-# website
+# Recovery Roots
 
 Recovery Roots is an eating disorder recovery community designed to help brave souls reclaim trust, awareness, alignment and acceptance by honoring the four bodies through authentic experience, guidance and connection.
 
-[Four Bodies]
+|| Four Bodies ||
 
 >> Phsyical
 When beginning to learn how to work with the physical body, our focus is on cultivating a compassionate, trusting, accepting and attuned relationship to your body’s intuitive cues and natural rhythms.
