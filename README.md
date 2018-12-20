@@ -1,4 +1,5 @@
 # Recovery Roots
+![recovery roots website](https://i.ibb.co/48R1YG1/rr.png)
 
 Recovery Roots is an eating disorder recovery community designed to help brave souls reclaim trust, awareness, alignment and acceptance by honoring the four bodies through authentic experience, guidance and connection.
 
